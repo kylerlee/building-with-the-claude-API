@@ -1,0 +1,53 @@
+[
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "70",
+      "age": "28",
+      "goal": "marathon training with carbohydrate loading for race day preparation",
+      "dietary_restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan totals 3000+ calories with carbohydrate emphasis (55-65% of calories)",
+      "Includes strategic hydration timing around training/meals",
+      "Compact format with breakfast, lunch, dinner, and 1-2 snacks only",
+      "All meals are practical and quick to prepare for a busy athlete"
+    ],
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3000+ calories with emphasis on carbohydrate loading and hydration timing"
+  },
+  {
+    "prompt_inputs": {
+      "height": "180",
+      "weight": "85",
+      "age": "26",
+      "goal": "build muscle and increase strength",
+      "dietary_restrictions": "none"
+    },
+    "solution_criteria": [
+      "Meal plan covers 1 full day with breakfast, lunch, dinner, and snacks",
+      "Includes pre and post-workout nutrition windows with appropriate timing",
+      "Protein-focused macros with adequate carbs and fats for strength athlete (minimum 1.6g protein per kg bodyweight)",
+      "Meals are practical, compact, and concise without excessive detail or lengthy descriptions"
+    ],
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a strength/power athlete (weightlifter) needing balanced macros with protein-focused meals and pre/post-workout nutrition windows"
+  },
+  {
+    "prompt_inputs": {
+      "height": "173",
+      "weight": "68",
+      "age": "26",
+      "goal": "Maintain 66kg weight class for boxing competition in 3 days while preserving muscle and performance",
+      "dietary_restrictions": "None"
+    },
+    "solution_criteria": [
+      "Meal plan totals 1,800-2,000 calories to support gradual weight loss while maintaining athletic performance",
+      "Includes high-protein foods (minimum 120g protein daily) to preserve muscle during caloric deficit",
+      "Provides 4-5 meals/snacks distributed throughout the day to maintain energy and training capacity",
+      "Contains only whole, nutrient-dense foods with minimal processed ingredients"
+    ],
+    "task_description": "write a compact, concise 1 day meal plan for a single athlete",
+    "scenario": "Testing with a sport requiring weight management (boxer or gymnast) needing calorie-controlled, nutrient-dense meals that maintain performance while meeting specific weight targets"
+  }
+]
