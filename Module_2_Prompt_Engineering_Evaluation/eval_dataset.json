@@ -1,11 +1,17 @@
 [
   {
-    "task": "Write a Python function that parses an AWS S3 bucket name from an S3 URI in the format 's3://bucket-name/key/path' and returns just the bucket name."
+    "task": "Extract the AWS region from an S3 bucket URI in the format 's3://bucket-name/key' or 's3://bucket-name.region.amazonaws.com/key' and return the region or 'us-east-1' if not specified",
+    "format": "regex",
+    "solution_criteria": "A regex pattern that correctly identifies and captures AWS regions (e.g., us-west-2, eu-central-1, ap-southeast-1) from S3 URIs, or returns a default value when region is not explicitly stated"
   },
   {
-    "task": "Create a JSON object that represents an AWS IAM policy allowing read-only access to a specific DynamoDB table named 'UserProfiles'."
+    "task": "Create a Python function that validates an AWS IAM policy document by checking if it contains required top-level keys ('Version', 'Statement') and returns True if valid, False otherwise",
+    "format": "python",
+    "solution_criteria": "A function that accepts a dictionary representing an IAM policy, validates the presence of 'Version' and 'Statement' keys, and returns a boolean indicating validity"
   },
   {
-    "task": "Write a regular expression that validates an AWS EC2 security group ID, which follows the format 'sg-' followed by exactly 17 hexadecimal characters."
+    "task": "Generate a JSON CloudFormation template snippet for creating an S3 bucket with versioning enabled, public access blocked, and a lifecycle rule that deletes objects after 90 days",
+    "format": "json",
+    "solution_criteria": "A valid JSON object containing AWS::S3::Bucket resource definition with Properties including VersioningConfiguration, PublicAccessBlockConfiguration, and LifecycleConfiguration with a 90-day expiration rule"
   }
 ]
