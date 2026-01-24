@@ -1,53 +1,52 @@
 [
   {
     "prompt_inputs": {
-      "height": "180",
-      "weight": "70",
-      "age": "28",
-      "goal": "marathon training with carbohydrate loading for race day preparation",
-      "dietary_restrictions": "none"
+      "height": "178",
+      "weight": "72",
+      "age": "24",
+      "goal": "maintain athletic performance",
+      "dietary_restrictions": "vegan"
     },
     "solution_criteria": [
-      "Meal plan totals 3000+ calories with carbohydrate emphasis (55-65% of calories)",
-      "Includes strategic hydration timing around training/meals",
-      "Compact format with breakfast, lunch, dinner, and 1-2 snacks only",
-      "All meals are practical and quick to prepare for a busy athlete"
+      "Meal plan covers all three meals plus snacks for one full day",
+      "All foods are vegan with no animal products",
+      "Includes protein-rich alternatives (legumes, tofu, nuts, seeds) suitable for soccer performance",
+      "Calorie intake and macronutrient distribution support athletic maintenance needs"
     ],
     "task_description": "write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring 3000+ calories with emphasis on carbohydrate loading and hydration timing"
+    "scenario": "Testing with a sport-specific dietary restriction scenario (vegan soccer player) requiring nutrient-dense alternatives while maintaining athletic performance standards and adequate calorie intake"
   },
   {
     "prompt_inputs": {
       "height": "180",
       "weight": "85",
-      "age": "26",
-      "goal": "build muscle and increase strength",
+      "age": "28",
+      "goal": "muscle gain",
       "dietary_restrictions": "none"
     },
     "solution_criteria": [
-      "Meal plan covers 1 full day with breakfast, lunch, dinner, and snacks",
-      "Includes pre and post-workout nutrition windows with appropriate timing",
-      "Protein-focused macros with adequate carbs and fats for strength athlete (minimum 1.6g protein per kg bodyweight)",
-      "Meals are practical, compact, and concise without excessive detail or lengthy descriptions"
+      "Meal plan contains 4-5 meals distributed throughout the day",
+      "Total daily protein is at least 1.7g per kg of body weight (145g minimum)",
+      "Pre and post-workout meals are strategically timed around training",
+      "Macronutrient balance reflects high protein with moderate carbs appropriate for strength training"
     ],
     "task_description": "write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a strength/power athlete (weightlifter) needing balanced macros with protein-focused meals and pre/post-workout nutrition windows"
+    "scenario": "Testing with a strength/power athlete (weightlifter) emphasizing protein intake and macronutrient balance (high protein, moderate carbs) with meal timing around workout windows"
   },
   {
     "prompt_inputs": {
-      "height": "173",
+      "height": "180",
       "weight": "68",
-      "age": "26",
-      "goal": "Maintain 66kg weight class for boxing competition in 3 days while preserving muscle and performance",
-      "dietary_restrictions": "None"
+      "age": "28",
+      "goal": "marathon training preparation with carbohydrate loading",
+      "dietary_restrictions": "none"
     },
     "solution_criteria": [
-      "Meal plan totals 1,800-2,000 calories to support gradual weight loss while maintaining athletic performance",
-      "Includes high-protein foods (minimum 120g protein daily) to preserve muscle during caloric deficit",
-      "Provides 4-5 meals/snacks distributed throughout the day to maintain energy and training capacity",
-      "Contains only whole, nutrient-dense foods with minimal processed ingredients"
+      "Meal plan totals 3,500+ calories across all meals and snacks",
+      "Includes strategically timed carbohydrate-rich meals around training (pre-workout, post-workout, and recovery meals)",
+      "Presented as a compact, concise single-day schedule with meal times and portion guidance"
     ],
     "task_description": "write a compact, concise 1 day meal plan for a single athlete",
-    "scenario": "Testing with a sport requiring weight management (boxer or gymnast) needing calorie-controlled, nutrient-dense meals that maintain performance while meeting specific weight targets"
+    "scenario": "Testing with a high-endurance athlete (marathon runner) requiring carbohydrate loading and specific caloric targets (3,500+ calories) with timing-sensitive meals around training"
   }
 ]
