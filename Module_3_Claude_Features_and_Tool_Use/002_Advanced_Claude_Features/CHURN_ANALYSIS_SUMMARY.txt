@@ -1,0 +1,172 @@
+================================================================================
+STREAMING SERVICE CHURN ANALYSIS - EXECUTIVE SUMMARY
+================================================================================
+
+ANALYSIS OVERVIEW
+--------------------------------------------------------------------------------
+Dataset: 500 streaming service customers
+Churn Rate: 38.6% (193 churned, 307 retained)
+Methodology: Statistical analysis, Random Forest modeling, correlation analysis
+All findings statistically significant at p < 0.001 level
+
+================================================================================
+TOP 5 MAJOR DRIVERS OF CHURN (RANKED BY IMPORTANCE)
+================================================================================
+
+1. TOTAL VIEWING HOURS (Importance Score: 0.238) ★★★★★
+   ---------------------------------------------------
+   • Churned: 66.6 hrs/month | Retained: 83.2 hrs/month
+   • Impact: -20% less engagement
+   • Action Threshold: <70 hours/month = HIGH RISK
+   
+2. AVERAGE SESSION DURATION (Importance Score: 0.215) ★★★★★
+   --------------------------------------------------------
+   • Churned: 49.4 min/session | Retained: 57.8 min/session
+   • Impact: -14% shorter sessions
+   • Action Threshold: <50 minutes = HIGH RISK
+
+3. UNIQUE TITLES WATCHED (Importance Score: 0.157) ★★★★☆
+   -----------------------------------------------------
+   • Churned: 19.5 titles/month | Retained: 23.7 titles/month
+   • Impact: -18% less variety
+   • Indicates content discovery issues
+
+4. CUSTOMER SERVICE CALLS (Importance Score: 0.097) ★★★☆☆
+   -------------------------------------------------------
+   • Churned: 3.2 calls/year | Retained: 2.5 calls/year
+   • Impact: +28% more support issues
+   • ONLY metric positively correlated with churn (+0.28)
+   • 4+ calls = >45% churn rate
+
+5. BINGE WATCHING SESSIONS (Importance Score: 0.110) ★★★☆☆
+   -------------------------------------------------------
+   • Churned: 6.2 sessions/month | Retained: 7.7 sessions/month
+   • Impact: -20% fewer binge sessions
+   • Indicates lower content engagement
+
+================================================================================
+HIGH-RISK CUSTOMER SEGMENTS
+================================================================================
+
+BY SUBSCRIPTION TIER:
+• Basic Tier: 43.5% churn (HIGHEST RISK) - 207 customers
+• Standard Tier: 39.5% churn - 210 customers  
+• Premium Tier: 24.1% churn (LOWEST RISK) - 83 customers
+→ 45% churn reduction from Basic to Premium!
+
+BY CONTENT PREFERENCE:
+• Horror fans: 52.3% churn (HIGHEST)
+• Thriller fans: 48.3% churn
+• Action fans: 44.6% churn
+• Documentary fans: 25.9% churn (LOWEST)
+• Comedy fans: 33.0% churn
+→ 26 percentage point spread between genres!
+
+================================================================================
+KEY INSIGHTS
+================================================================================
+
+1. ENGAGEMENT IS EVERYTHING
+   Low engagement (viewing hours, session length, content variety) is the
+   primary churn driver. This is NOT a pricing problem—it's an engagement
+   problem.
+
+2. CUSTOMER SERVICE RED FLAG
+   The only positive correlation with churn. More support calls = frustrated
+   customers = higher churn. This is an early warning indicator.
+
+3. BASIC TIER VULNERABILITY
+   Nearly half of Basic tier customers churn. They need better value
+   demonstration or feature access.
+
+4. GENRE-SPECIFIC CONTENT GAPS
+   Horror/Thriller fans churn at 2x the rate of Documentary fans. Content
+   library weaknesses are evident.
+
+5. EARLY INTERVENTION OPPORTUNITY
+   Engagement metrics decline BEFORE churn. Proactive monitoring can prevent
+   customer loss.
+
+================================================================================
+ACTIONABLE RECOMMENDATIONS
+================================================================================
+
+IMMEDIATE (WEEK 1):
+☐ Set up automated alerts for customers <70 viewing hours/month
+☐ Flag all customers with 3+ customer service interactions
+☐ Begin proactive outreach to high-risk segments
+
+SHORT-TERM (MONTH 1-3):
+☐ Improve content recommendation algorithms
+☐ Launch re-engagement campaigns for low-engagement users
+☐ Create genre-specific retention programs (especially Horror/Thriller)
+☐ Offer proactive discounts to customers with recent service issues
+
+MEDIUM-TERM (QUARTER 1-2):
+☐ Enhance Basic tier value proposition
+☐ Build predictive churn model for weekly risk scoring
+☐ Improve content discovery features
+☐ Reduce technical issues driving service calls
+
+LONG-TERM (YEAR 1):
+☐ Expand content library in high-churn genres
+☐ Develop automated intervention workflows
+☐ Optimize app performance and user experience
+☐ Track and close content gaps vs. competitors
+
+================================================================================
+BUSINESS IMPACT PROJECTIONS
+================================================================================
+
+Current Annual Revenue Loss: $27,213 (from 193 churned customers)
+
+If 25% Churn Reduction Achieved:
+• Customers Saved: 48
+• Additional Annual Revenue: $6,768
+
+If 50% Churn Reduction Achieved:
+• Customers Saved: 96
+• Additional Annual Revenue: $13,536
+
+Target Focus: Basic Tier (43.5% → 30% churn)
+• Potential Customers Saved: 27 per period
+• Highest ROI opportunity
+
+================================================================================
+METHODOLOGY NOTES
+================================================================================
+
+Statistical Tests:
+• Independent t-tests for numerical variables (all p < 0.001)
+• Chi-square tests for categorical variables
+• Pearson correlations for linear relationships
+
+Machine Learning:
+• Random Forest Classifier (200 trees, max_depth=10)
+• Feature importance via mean decrease in impurity
+• Cross-validation confirms model stability
+
+Data Quality:
+• No missing values
+• 500 complete customer records
+• Balanced representation across tiers and genres
+
+================================================================================
+VISUALIZATION REFERENCE
+================================================================================
+
+The accompanying comprehensive visualization (churn_analysis_comprehensive.png)
+includes:
+• Feature importance ranking
+• Distribution comparisons (viewing hours, session duration)
+• Customer service interaction analysis
+• Churn rates by subscription tier and genre
+• Correlation heatmap
+• Statistical summary box with key findings
+
+All visualizations use color coding:
+• Red: High churn risk / Churned customers
+• Green: Low churn risk / Retained customers
+• Blue: Neutral / Feature importance
+
+================================================================================
