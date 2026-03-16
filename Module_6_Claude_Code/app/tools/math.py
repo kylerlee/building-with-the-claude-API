@@ -14,6 +14,10 @@ def add(
     - When you need to perform simple addition
     - When you need precise numerical calculation
 
+    When NOT to use:
+    - When you need subtraction, multiplication, or division
+    - When you need to add more than two numbers at once
+
     Examples:
     >>> add(2, 3)
     5.0

@@ -35,20 +35,24 @@ Tools are plain functions with Pydantic `Field` descriptions on parameters and a
 from pydantic import Field
 
 def my_tool(
-    param: str = Field(description="What this parameter does"),
+    param: str = Field(description="Detailed description of this parameter"),
+    count: int = Field(description="Explain what this parameter does"),
 ) -> str:
     """One-line summary.
 
-    Longer description.
+    Detailed explanation of functionality.
 
     When to use:
     - bullet points
 
+    When NOT to use:
+    - bullet points
+
     Examples:
-    >>> my_tool("foo")
+    >>> my_tool("foo", 1)
     'result'
     """
     ...
 ```
 
-The docstring and `Field` descriptions are surfaced to Claude as tool documentation, so they should be precise and informative.
+The docstring and `Field` descriptions are surfaced to Claude as tool documentation. All four sections (summary, explanation, when to/not to use, examples) are required.
